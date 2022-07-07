@@ -52,6 +52,7 @@ class Test_1_loginnop:
         self.driver.find_element(By.XPATH,'//*[@id="SearchCategoryName"]').send_keys('Computers')
         el = self.driver.find_element(By.XPATH,'//*[@id="SearchPublishedId"]')
         drp = Select(el)
+        time.sleep(2)
         drp.select_by_visible_text('Published only')
         self.driver.find_element(By.XPATH,'//*[@id="search-categories"]').click()
         time.sleep(5)
