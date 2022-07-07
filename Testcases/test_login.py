@@ -47,6 +47,8 @@ class Test_1_loginnop:
         aa.catelog_elm().click()
         time.sleep(3)
         aa.category_elm().click()
+        time.sleep(5)
+        self.driver.find_element(By.XPATH,'/html/body/div[3]/div[1]/section/div/div/div/div[1]/div/div[1]/div[3]/i').click()
         self.driver.find_element(By.XPATH,'//*[@id="SearchCategoryName"]').send_keys('Computers')
         el = self.driver.find_element(By.XPATH,'//*[@id="SearchPublishedId"]')
         drp = Select(el)
